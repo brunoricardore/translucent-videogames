@@ -1,0 +1,29 @@
+@import "src/assets/variables.scss";
+
+.control-group {
+  font-family: "Raleway", sans-serif;
+
+  label {
+    display: block;
+  }
+
+  input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    transition: all 0.3s ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.ng-invalid.ng-touched {
+      border-bottom: 1px solid $cedar-chest;
+    }
+  }
+
+  small {
+    color: $cedar-chest;
+    margin-top: 5px;
+    display: block;
+  }
+}

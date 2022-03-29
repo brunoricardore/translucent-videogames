@@ -1,0 +1,5 @@
+<div class="control-group">
+    <label [for]="id"> {{label}} {{isRequired ? '*' : '' }} </label>
+    <input [placeholder]="placeholder" [id]="id" [formControl]="control" [type]="type" />
+    <small *ngIf="control.invalid"> {{errorMessage}} </small>
+</div>

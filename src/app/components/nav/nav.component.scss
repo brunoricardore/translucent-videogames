@@ -1,0 +1,49 @@
+@import 'src/assets/variables.scss';
+
+
+nav {
+    height: 80px;
+    background-color: $raisin-black;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+
+    .logo {
+        font-family: 'Noto Sans Display', sans-serif;
+        color: $laser-lemon;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: .1em;
+    }
+
+    .menu {
+        margin-left: auto;
+        display: flex;
+        gap: 15px;
+        font-family: 'Raleway', sans-serif;
+
+        a {
+            padding: 5px 10px;
+            border-radius: 3px;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid $middle-blue-green;
+            transition: all .3s ease-in-out;
+
+            &.active {
+                background-color: $middle-blue-green;
+                color: $raisin-black;
+                font-weight: 600;
+            }
+
+            &:hover {
+                background-color: $middle-blue-green;
+                color: $raisin-black;
+            }
+
+        }
+
+    }
+
+}
